@@ -15,7 +15,14 @@ class _CategoriesCardState extends State<CategoriesCard> {
     return Card(
       child: Container(
         child: Center(
-          child: Text(widget.name_category),
+          child: GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, '/produtos', arguments: '${widget.name_category}');
+            },
+            child: Container(
+              child: Text(widget.name_category),
+            ),
+          ),
         ),
       ),
     );
