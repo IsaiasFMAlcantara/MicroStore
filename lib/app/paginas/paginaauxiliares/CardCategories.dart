@@ -14,7 +14,6 @@ class _CategoriesCardState extends State<CategoriesCard> {
   Widget build(BuildContext context) {
     return Card(
       child: Container(
-        color: Colors.red,
         child: Center(
           child: Text(widget.name_category),
         ),
