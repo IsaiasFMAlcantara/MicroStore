@@ -23,7 +23,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
       itemCount: listaJson.length,
       itemBuilder: (context, index) {
         final categorias = listaJson[index];
-        return CategoriesCard(name_category: '${categorias['categoria']}');
+        return GestureDetector(child: CategoriesCard(name_category: '${categorias['categoria']}'));
       },
     );
   }
